@@ -1,0 +1,125 @@
+﻿/*! 
+    draggables.ccs
+    http://draggables.com
+    Copyright (C) 2011 Glenn Jones. All Rights Reserved. MIT license
+
+    Draggables add the following classes during interaction
+
+    dragIconOver - When a user moves the cursor over the drag icon
+    dragIconDown - When a user holdes down the mouse button on a drag icon
+    dragIconStart - When a users is dragging the icon
+    dropTargetOver - When a user drags a item over the drop zone
+
+*/
+
+
+
+
+/* 
+    Example CSS used on the draggables site  
+    ---------------------------------------------------------------
+*/
+
+.dropArea
+{
+    background-position: center 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;
+    border-radius: 1em;
+    border: 1px solid #eee;
+    background-image: url('box.png');
+    background-repeat: no-repeat;
+    display: block;
+    padding: 1em;
+    padding-top: 6em;
+    margin-bottom: 2em;
+    width: 10em;
+}
+
+
+.dropTargetOver
+{
+    background-image: url('box-selected.png');
+}
+ 
+.drag-group
+{
+    width: 128px;
+    text-align: center;
+    position: relative;
+    -moz-border-radius: 1em;
+    -webkit-border-radius: 1em;    
+    border: 1px solid #eee;
+}
+
+.drag-text
+{    
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 10;
+    width: 100%
+}
+
+#dragicon
+{
+    padding: 10px;
+    margin-bottom: 2em;
+}
+
+
+.drag-icon:focus
+{
+    outline: none;
+}
+
+
+#dragicon.dropIconDrag
+{
+    background-color: transparent;
+    border: none;
+}
+
+
+#draggablesPopup
+{
+	position: absolute;
+	width: 10em;
+	padding: 0.3em;
+	background: #ccc;
+	color: #000;
+	border: 1px solid #000;
+	top: 10px;
+	left: 10px;
+	cursor: default;
+	z-index: 1000;
+	list-style-type:none;
+}
+
+
+#draggablesPopup li
+{
+	text-align: left;
+	margin: 0.3em 0;
+	padding: 0 0.2em;
+}
+
+
+#draggablesPopup li.draggablesPopupHover
+{
+	background: #00c;
+	color: #fff;
+}
+
+
+#draggablesPopup li:focus
+{
+    outline: none;    
+}
+
